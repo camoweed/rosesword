@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "rosesword",
+  "version": "${version}",
+
+  "name": "Rose Sword",
+  "description": "Adds the Rose Sword. Requested by thatsus_guy",
+  "authors": [
+    "camoweed_"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+	"icon": "icon.png",
+  "license": "CC0-1.0",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+			"camoweed.rosesword.ModMain"
+    ],
+		"beforeGameStart": [
+			"camoweed.rosesword.ModMain"
+		],
+		"afterGameStart": [
+			"camoweed.rosesword.ModMain"
+		],
+    "initModels": [
+      "camoweed.rosesword.ModModels"
+    ],
+		"recipesReady": [
+			"camoweed.rosesword.ModRecipes"
+		]
+	},
+  "mixins": [
+      "rosesword.mixins.json"
+  ],
+
+  "depends": {
+		"minecraft": "*",
+    "fabricloader": ">=0.15.5"
+  },
+  "suggests": {
+  }
+}
