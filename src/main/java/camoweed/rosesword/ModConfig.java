@@ -1,4 +1,4 @@
-package camoweed.rosesword;
+/*package camoweed.rosesword;
 
 import turniplabs.halplibe.util.TomlConfigHandler;
 import turniplabs.halplibe.util.toml.Toml;
@@ -15,3 +15,4 @@ public class ModConfig {
 		CFG = new TomlConfigHandler(ModMain.MOD_ID, TOML);
 	}
 }
+*/

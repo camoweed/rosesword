@@ -12,8 +12,8 @@ import turniplabs.halplibe.helper.ArmorHelper;
 import turniplabs.halplibe.helper.ItemBuilder;
 
 public class ModItems {
-    private static int startingID = ModConfig.CFG.getInt("IDs.startingBlockID");
-    private static int nextID() {return startingID++;}
+    //private static int startingID = ModConfig.CFG.getInt("IDs.startingBlockID");
+    //private static int nextID() {return startingID++;}
 
     public static Item roseSword;
     public static Item roseBoots;
@@ -24,14 +24,14 @@ public class ModItems {
         public static ArmorMaterial roseArmour = ArmorHelper.createArmorMaterial(MOD_ID, "roseArmour", 600, 50f, 35f, 15f, 100f);
     public static void initItems() {
             roseSword = new ItemBuilder(MOD_ID)
-        .build(new ItemToolSword("item.rosesword", MOD_ID + ":item/rosesword", nextID(), roseToolMaterial));
+        .build(new ItemToolSword("item.rosesword", MOD_ID + ":item/rosesword", 17000, roseToolMaterial));
             roseBoots = new ItemBuilder(MOD_ID)
-        .build(new ItemArmor("item.roseBoots", MOD_ID + ":item/roseBoots", nextID(), roseArmour, IArmorItem.PIECE_BOOTS));
+        .build(new ItemArmor("item.roseBoots", MOD_ID + ":item/roseBoots", 17001, roseArmour, IArmorItem.PIECE_BOOTS));
             rosePants = new ItemBuilder(MOD_ID)
-        .build(new ItemArmor("item.rosePants", MOD_ID + ":item/rosePants", nextID(), roseArmour, IArmorItem.PIECE_LEGS));
+        .build(new ItemArmor("item.rosePants", MOD_ID + ":item/rosePants", 17002, roseArmour, IArmorItem.PIECE_LEGS));
             roseChest = new ItemBuilder(MOD_ID)
-        .build(new ItemArmor("item.roseChest", MOD_ID + ":item/roseChest", nextID(), roseArmour, IArmorItem.PIECE_CHEST));
+        .build(new ItemArmor("item.roseChest", MOD_ID + ":item/roseChest", 17003, roseArmour, IArmorItem.PIECE_CHEST));
             roseHelm = new ItemBuilder(MOD_ID)
-        .build(new ItemArmor("item.roseHelm", MOD_ID + ":item/roseHelm", nextID(), roseArmour, IArmorItem.PIECE_HEAD));
+        .build(new ItemArmor("item.roseHelm", MOD_ID + ":item/roseHelm", 17004, roseArmour, IArmorItem.PIECE_HEAD));
     }
 }
